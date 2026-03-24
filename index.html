@@ -14,9 +14,9 @@
       --bg-lift:     #111111;
       --bg-card:     #141414;
       --border:      rgba(255,255,255,0.07);
-      --text-primary:#e8e2d9;
-      --text-muted:  #7a7570;
-      --text-dim:    #4a4744;
+      --text-primary:#f0ece6;
+      --text-muted:  #b0a89e;
+      --text-dim:    #7a7570;
       --accent:      #c8964a;
       --accent-dim:  rgba(200,150,74,0.15);
       --accent-faint:rgba(200,150,74,0.06);
@@ -157,16 +157,16 @@
       font-size: clamp(1.1rem, 2.5vw, 1.5rem);
       font-weight: 300;
       font-style: italic;
-      color: var(--text-muted);
+      color: var(--white);
       margin-bottom: 48px;
       opacity: 0;
       animation: fadeUp 0.9s ease 0.6s forwards;
     }
     .hero-meta {
-      font-size: 0.72rem;
+      font-size: 0.78rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--text-dim);
+      color: var(--text-muted);
       opacity: 0;
       animation: fadeUp 0.9s ease 0.8s forwards;
     }
@@ -314,9 +314,10 @@
       line-height: 1.25;
     }
     .work-card-meta {
-      font-size: 0.75rem;
-      color: var(--text-muted);
+      font-size: 0.78rem;
+      color: var(--white);
       letter-spacing: 0.04em;
+      font-weight: 400;
     }
 
     /* ─── Resume & CV ─────────────────────────────────────────────── */
@@ -340,7 +341,7 @@
       font-size: 1.2rem;
       font-weight: 300;
       font-style: italic;
-      color: var(--text-muted);
+      color: var(--text-primary);
       line-height: 1.75;
       margin-bottom: 36px;
       max-width: 380px;
@@ -350,11 +351,11 @@
       align-items: center;
       gap: 10px;
       padding: 13px 28px;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(255,255,255,0.18);
       font-size: 0.7rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--text-primary);
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
@@ -400,10 +401,11 @@
     }
     .resume-entry:last-child { border-bottom: none; padding-bottom: 0; }
     .resume-date {
-      font-size: 0.72rem;
-      color: var(--text-dim);
+      font-size: 0.78rem;
+      color: var(--text-muted);
       letter-spacing: 0.06em;
       padding-top: 2px;
+      font-weight: 500;
     }
     .resume-role {
       font-family: var(--serif);
@@ -413,14 +415,15 @@
       margin-bottom: 4px;
     }
     .resume-org {
-      font-size: 0.78rem;
-      color: var(--text-muted);
+      font-size: 0.82rem;
+      color: var(--text-primary);
       margin-bottom: 8px;
+      font-weight: 400;
     }
     .resume-desc {
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     /* Skills grid inside resume */
@@ -580,7 +583,7 @@
       <p class="hero-eyebrow">Lighting Design</p>
       <h1 class="hero-name">Andy<br><em>Morehouse</em></h1>
       <p class="hero-subtitle">Illuminating stories for the stage</p>
-      <p class="hero-meta">Barter Theatre &nbsp;·&nbsp; Abingdon, VA &nbsp;·&nbsp; LORT Repertory</p>
+      <p class="hero-meta">Abingdon, VA</p>
     </div>
     <div class="hero-scroll">
       <span>Scroll</span>
@@ -614,7 +617,7 @@
         <div class="work-card-info">
           <p class="work-card-label">Production</p>
           <h3 class="work-card-title">Production Title One</h3>
-          <p class="work-card-meta">Theatre / Year &nbsp;·&nbsp; Director Name</p>
+          <p class="work-card-meta">Theatre / Year</p>
         </div>
       </article>
 
@@ -634,7 +637,7 @@
         <div class="work-card-info">
           <p class="work-card-label">Production</p>
           <h3 class="work-card-title">Production Title Two</h3>
-          <p class="work-card-meta">Theatre / Year &nbsp;·&nbsp; Director Name</p>
+          <p class="work-card-meta">Theatre / Year</p>
         </div>
       </article>
 
@@ -654,7 +657,7 @@
         <div class="work-card-info">
           <p class="work-card-label">Production</p>
           <h3 class="work-card-title">Production Title Three</h3>
-          <p class="work-card-meta">Theatre / Year &nbsp;·&nbsp; Director Name</p>
+          <p class="work-card-meta">Theatre / Year</p>
         </div>
       </article>
 
@@ -674,7 +677,7 @@
         <div class="work-card-info">
           <p class="work-card-label">Production</p>
           <h3 class="work-card-title">Production Title Four</h3>
-          <p class="work-card-meta">Theatre / Year &nbsp;·&nbsp; Director Name</p>
+          <p class="work-card-meta">Theatre / Year</p>
         </div>
       </article>
 
@@ -694,7 +697,7 @@
         <div class="work-card-info">
           <p class="work-card-label">Production</p>
           <h3 class="work-card-title">Production Title Five</h3>
-          <p class="work-card-meta">Theatre / Year &nbsp;·&nbsp; Director Name</p>
+          <p class="work-card-meta">Theatre / Year</p>
         </div>
       </article>
 
@@ -714,7 +717,7 @@
         <div class="work-card-info">
           <p class="work-card-label">Production</p>
           <h3 class="work-card-title">Production Title Six</h3>
-          <p class="work-card-meta">Theatre / Year &nbsp;·&nbsp; Director Name</p>
+          <p class="work-card-meta">Theatre / Year</p>
         </div>
       </article>
 
@@ -916,7 +919,7 @@
       <h2 class="contact-headline reveal">Let's make<br>something.</h2>
       <p class="contact-sub reveal">Available for lighting design consultations,<br>freelance commissions, and collaborative projects.</p>
       <div class="contact-links reveal">
-        <a href="mailto:andy@amorehouse.net" class="contact-link primary">andy@amorehouse.net</a>
+        <a href="/cdn-cgi/l/email-protection#462728223f06272b2934232e2933352368282332" class="contact-link primary"><span class="__cf_email__" data-cfemail="73121d170a33121e1c01161b1c0600165d1d1607">[email&#160;protected]</span></a>
         <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">LinkedIn</a>
       </div>
     </div>
@@ -929,7 +932,7 @@
   </footer>
 
   <!-- ── JS ───────────────────────────────────────────────────────── -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -944,13 +947,4 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(el => observer.observe(el));
-  </script>
-
-</body>
-</html>
+          en
